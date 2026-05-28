@@ -3,9 +3,8 @@ FROM python:3.12-slim
 WORKDIR /app
 
 COPY requirements.txt .
-
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["python", "src/forecast.py"]
+CMD ["python", "src/forecast.py"]

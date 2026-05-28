@@ -1,3 +1,11 @@
+## Quick Start
+
+```bash
+git clone https://github.com/michaelslmn/btc-lstm-forecasting.git
+cd btc-lstm-forecasting
+docker build -t btc-lstm .
+docker run --rm -v ${PWD}:/app btc-lstm --date 2025-07-01
+
 # BTC/USDT Bidirectional LSTM Forecasting
 
 A deep learning project for forecasting Bitcoin (BTC/USDT) prices using a Bidirectional LSTM neural network built with TensorFlow and Keras.

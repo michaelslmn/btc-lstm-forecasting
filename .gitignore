@@ -8,3 +8,7 @@ models/
 env/
 
 .DS_Store
+
+outputs/
+data/
+*.png
